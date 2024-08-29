@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.editor-container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  flex-grow: 2;
+  flex-basis: 0;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.editor-containerCollapsed {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  overflow: scroll;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.inner-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editor {
+  /* border: 2px solid #ff0000; */
+  height: 100%;
+}
+
+.CodeMirror {
+  height: 98% !important;
+  color: #fff;
+  /* border: 4px solid black; */
+}
+
+.CodeMirror-gutters {
+  background: #1d1e22 !important;
+}
+
+.CodeMirror-scroll {
+  background: #1d1e22;
+}
